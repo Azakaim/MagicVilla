@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 //builder.Host.UseSerilog();
 builder.Services.AddSingleton<ILogging, LoggingV2>();
+
 builder.Services.AddControllers(option =>
 {
     option.ReturnHttpNotAcceptable = true;
